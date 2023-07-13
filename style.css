@@ -1,0 +1,114 @@
+body {
+	background-color: rgb(9, 9, 9);
+}
+
+.container {
+	max-width: 1000px;
+	padding: 20px 10px;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+.select {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.authors-select {
+	margin-right: 10px;
+}
+
+.authors-select,
+.next-button {
+	cursor: pointer;
+	color: white;
+	background-color: rgb(9, 9, 9);
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: white;
+}
+
+.next-button:hover {
+	background-color: rgb(241, 241, 241);
+	color: black;
+}
+
+.quote-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	color: white;
+}
+
+.quote-content {
+	font-size: 45px;
+	text-align: center;
+}
+
+#rectangle {
+	position: relative;
+	float: left;
+	font-size: 48px;
+
+	background-color: rgb(9, 9, 9);
+}
+
+#rectangle > span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	background-color: rgb(9, 9, 9);
+	border-left: 1px solid transparent;
+	animation: Fwrite 3s steps(14, start) infinite, Wbar 0.5s step-end infinite;
+	-webkit-animation: Fwrite 3s steps(14, start) infinite,
+		Wbar 0.5s step-end infinite;
+}
+
+#rectangle > p:hover {
+	animation-play-state: paused;
+}
+
+@keyframes Fwrite {
+	0% {
+		width: 100%;
+	}
+	100% {
+		width: 0;
+	}
+}
+
+@keyframes Wbar {
+	0% {
+		border-left-color: transparent;
+	}
+	50% {
+		border-left-color: rgb(255, 255, 255);
+	}
+	100% {
+		border-left-color: transparent;
+	}
+}
+
+@-webkit-keyframes Fwrite {
+	0% {
+		width: 100%;
+	}
+	100% {
+		width: 0;
+	}
+}
+
+@-webkit-keyframes Wbar {
+	0% {
+		border-left-color: transparent;
+	}
+	50% {
+		border-left-color: black;
+	}
+	100% {
+		border-left-color: transparent;
+	}
+}

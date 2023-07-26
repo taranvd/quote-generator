@@ -1,6 +1,6 @@
 
 
-# Quote Generator
+# Quote Generator ✨
 
 ![Quote Generator](https://i.imgur.com/DrX1JKk.png)
 
